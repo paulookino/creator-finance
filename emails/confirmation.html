@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Confirme seu email — CreatorFinance</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f0f2f8; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrapper { max-width: 560px; margin: 40px auto; padding: 0 16px 40px; }
+  .card { background: #ffffff; border-radius: 24px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+  .header { background: linear-gradient(135deg, #5d5fef 0%, #4f46e5 60%, #7c3aed 100%); padding: 40px 40px 36px; text-align: center; }
+  .logo { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 24px; }
+  .logo-icon { width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 22px; height: 22px; }
+  .logo-text { font-size: 18px; font-weight: 800; color: #ffffff; letter-spacing: -0.3px; }
+  .header h1 { font-size: 26px; font-weight: 800; color: #ffffff; line-height: 1.3; letter-spacing: -0.5px; }
+  .header p { font-size: 15px; color: rgba(255,255,255,0.75); margin-top: 8px; }
+  .body { padding: 40px; }
+  .greeting { font-size: 16px; color: #1a1d2e; margin-bottom: 16px; line-height: 1.6; }
+  .greeting strong { color: #1a1d2e; }
+  .desc { font-size: 15px; color: #64748b; line-height: 1.7; margin-bottom: 32px; }
+  .btn-wrap { text-align: center; margin-bottom: 32px; }
+  .btn { display: inline-block; background: linear-gradient(135deg, #5d5fef, #4f46e5); color: #ffffff !important; text-decoration: none; font-size: 16px; font-weight: 700; padding: 16px 40px; border-radius: 14px; letter-spacing: -0.2px; }
+  .divider { border: none; border-top: 1px solid #f0f2f8; margin: 24px 0; }
+  .link-fallback { font-size: 13px; color: #94a3b8; line-height: 1.6; text-align: center; }
+  .link-fallback a { color: #5d5fef; word-break: break-all; }
+  .features { display: grid; gap: 12px; margin: 28px 0; }
+  .feature { display: flex; align-items: flex-start; gap: 12px; background: #f8f9fa; border-radius: 12px; padding: 14px; }
+  .feature-icon { width: 32px; height: 32px; background: rgba(93,95,239,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .feature-icon svg { width: 16px; height: 16px; color: #5d5fef; }
+  .feature-text { font-size: 13px; color: #475569; line-height: 1.5; }
+  .feature-text strong { color: #1a1d2e; display: block; margin-bottom: 2px; }
+  .footer { padding: 24px 40px; background: #fafbfc; border-top: 1px solid #f0f2f8; text-align: center; }
+  .footer p { font-size: 12px; color: #94a3b8; line-height: 1.6; }
+  .footer a { color: #5d5fef; text-decoration: none; }
+  .expires { font-size: 12px; color: #94a3b8; text-align: center; margin-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="card">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </span>
+        <span class="logo-text">CreatorFinance</span>
+      </div>
+      <h1>Confirme seu email</h1>
+      <p>Falta um passo para começar</p>
+    </div>
+
+    <!-- Body -->
+    <div class="body">
+      <p class="greeting">Olá! 👋</p>
+      <p class="desc">
+        Obrigado por criar sua conta no <strong>CreatorFinance</strong>. Clique no botão abaixo para confirmar seu endereço de email e ativar sua conta com <strong>7 dias grátis</strong>.
+      </p>
+
+      <div class="btn-wrap">
+        <a class="btn" href="{{ .ConfirmationURL }}">
+          Confirmar email e ativar conta
+        </a>
+      </div>
+
+      <p class="expires">⏱ Este link expira em <strong>24 horas</strong>.</p>
+
+      <hr class="divider" />
+
+      <!-- O que você ganha -->
+      <p style="font-size:13px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;">O que te espera</p>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#5d5fef" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>
+            </svg>
+          </div>
+          <div class="feature-text">
+            <strong>Receita consolidada</strong>
+            Kiwify, Hotmart e AdSense num único dashboard
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#5d5fef" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <div class="feature-text">
+            <strong>Imposto automático</strong>
+            MEI, Simples ou Presumido — sempre atualizado
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#5d5fef" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <div class="feature-text">
+            <strong>Calendário de recebimentos</strong>
+            Sabe exatamente quando cada plataforma paga
+          </div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <p class="link-fallback">
+        Se o botão não funcionar, copie e cole este link no navegador:<br />
+        <a href="{{ .ConfirmationURL }}">{{ .ConfirmationURL }}</a>
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        Você recebeu este email porque criou uma conta no CreatorFinance.<br />
+        Se não foi você, ignore este email — sua conta não será ativada.
+      </p>
+      <p style="margin-top:8px;">
+        <a href="https://creator-finance-pi.vercel.app">creator-finance-pi.vercel.app</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
